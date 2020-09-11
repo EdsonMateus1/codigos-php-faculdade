@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    padding: 20px;
+}
+div{
+    padding: 20px;
+    border: solid 1px;
+    margin: 10px 0px;
+}
+p{
+    font-weight: bold;
+    margin: 10px 0px;
+    font-size: 30px;
+}
+li{
+    margin: 10px 5px;
+}
+pre{
+    font-size: 20px;
+    margin: 10px 0px;
+}
+span{
+    font-size: 20px;
+}
