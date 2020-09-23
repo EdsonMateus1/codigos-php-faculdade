@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 5px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 350px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav ul li a{
+  text-decoration: none;
+
+}
+nav ul li a button{
+  background: #DCDCDC;
+  border: none;
+  color: #696969;
+  padding: 10px 62px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 
+  0 6px 20px 0 rgba(0,0,0,0.19);
+  width: 100%;
+}
+nav ul li a button:hover {
+  background-color: #F5F5F5; /* Green */
+  color: #1C1C1C;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 
+  0 17px 50px 0 rgba(0,0,0,0.19);
+  font-size: 21px;
+}
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 350px; /* only for demonstration, should be removed */
+}
+.tabelaPHP
+{
+    position: absolute; /*independente*/
+    text-align: center;
+    top: 300px;
+    left: 40%;
+    font: 100% sans-serif;
+    border: 2px solid #F4A460;
+    border-color: #DCDCDC;
+    border-radius: 7px;
+    background-color: #DCDCDC;
+     box-shadow: 4px 4px 4px #DCDCDC;
+     width: 400px;
+     height: 300px;
+}
+.tabelaPHP td
+{
+    border: 2px solid #F4A460;
+    border-color: #696969;
+    border-collapse: collapse;
+     background-color:#DCDCDC;
+     color: #000;
+}
+.tabelaPHP tr
+{
+    
+    border-collapse: collapse;
+     background-color:#F5F5DC;
+}
+fieldset{
+  background-color: #ccc;
+  width: 100%;
+  padding: 10px;
+  margin-top: 70px;
+}
+input [input=text]
+{
+  background-color: #666;
+}
+.ipn
+{
+  margin: 10px 10px 10px 10px;
+  width: 50%;
+}
+.ipe  
+{
+  margin: 10px 10px 10px 10px;
+  width: 50%;
+}
+.ips
+{
+  background: #DCDCDC;
+  color: #696969;
+  padding: 5px 0px 5px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 
+  0 6px 20px 0 rgba(0,0,0,0.19);
+  width: 20%;
+}
+.ips:hover{
+background-color: #F5F5F5; /* Green */
+  color: #1C1C1C;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 
+  0 17px 50px 0 rgba(0,0,0,0.19);
+  font-size: 17px;
+  width: 22%;
+}
+
+
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 35px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
