@@ -94,10 +94,10 @@ article {
      background-color:#F5F5DC;
 }
 fieldset{
-  background-color: #ccc;
   width: 100%;
   padding: 10px;
   margin-top: 70px;
+  border: 0px;
 }
 input [input=text]
 {
@@ -136,15 +136,10 @@ background-color: #F5F5F5; /* Green */
   0 17px 50px 0 rgba(0,0,0,0.19);
   font-size: 17px;
   width: 22%;
+  
 }
 
 
-
-section:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 /* Style the footer */
 footer {
@@ -162,3 +157,27 @@ footer {
   }
 }
 
+.inputFlex-container{
+  display: grid;
+  grid-template-columns: 150px 1fr ;
+  margin: 0px;
+  padding: 2px;
+  height: 100%;
+  align-items: center;
+}
+
+.form-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.article-container{
+  display: flex;
+  padding: 3px;
+  align-items: center;
+}
+#button-input{
+  grid-column: 1 / 3;
+  margin-left: 20%;
+}
