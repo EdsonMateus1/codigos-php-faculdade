@@ -14,7 +14,7 @@ function __autoload($class_name)
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cadastro Clientes</title>
+    <title>Cadastro Notebooks</title>
     <link rel="stylesheet" href="style_teste.css">
     <meta name="description" content="PHP-OOR" />
     <meta name="robots" content="index, follow" />
@@ -24,7 +24,7 @@ function __autoload($class_name)
     <!-- instanciando um objeto da classe usuarios -->
     <!-- instanciando um objeto da classe usuarios -->
     <?php
-    $desktops = new Notebook();
+    $desktops = new notebooks();
     //O isset é necessário se você precisa saber se a variável 
     //foi previamente definida
     if (isset($_POST['cadastrar'])) :
@@ -50,19 +50,20 @@ function __autoload($class_name)
     <section>
         <nav>
             <ul>
-                <li><a href="#"><button>Notebooks</button></a></li>
-                <li><a href="http://localhost:1010/index.php"><button>Clientes</button></a></li>
-                <li><a href="#"><button>Tablets</button></a></li>
-                <li><a href="#"><button>Celulares</button></a></li>
-                <li><a href="#"><button>Servidores</button></a></li>
-                <li><a href="#"><button>Softwares</button></a></li>
+                <li><a href="/index.php"><button>Clientes</button></a></li>
+                <li><a href="/notebook.php"><button>Notebooks</button></a></li>
+                <li><a href="/desktop.php"><button>Desktops</button></a></li>
+                <li><a href="/tablets.php"><button>Tablets</button></a></li>
+                <li><a href="/celulares.php"><button>Celulares</button></a></li>
+                <li><a href="/servidores.php"><button>Servidores</button></a></li>
+                <li><a href="/sofwares.php"><button>Softwares</button></a></li>
             </ul>
         </nav>
 
         <article class="article-container">
 
             <form method="post" action="" class="form-container">
-                <fieldset class="inputFlex-container">
+                <div class="inputFlex-container">
 
                     <label>marca:</label>
                     <input type="text" name="marca" class="ipn" />
@@ -86,7 +87,7 @@ function __autoload($class_name)
                     <input type="text" name="preco" class="ipe" />
 
                     <input type="submit" name="cadastrar" value="Cadastrar Dados" class="ips" id="button-input" />
-                </fieldset>
+                </div>
 
             </form>
         </article>

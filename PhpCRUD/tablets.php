@@ -14,7 +14,7 @@ function __autoload($class_name)
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cadastro Desktops</title>
+    <title>Cadastro Tablets</title>
     <link rel="stylesheet" href="style_teste.css">
     <meta name="description" content="PHP-OOR" />
     <meta name="robots" content="index, follow" />
@@ -22,21 +22,18 @@ function __autoload($class_name)
 
 <body>
     <!-- instanciando um objeto da classe usuarios -->
+    <!-- instanciando um objeto da classe usuarios -->
     <?php
-    $desktops = new desktops();
+    $tablet = new tabletes();
     //O isset é necessário se você precisa saber se a variável 
     //foi previamente definida
     if (isset($_POST['cadastrar'])) :
         //Variável global, $_POST.
-        $desktops->setMarca($_POST['marca']);
-        $desktops->setModelo($_POST['modelo']);
-        $desktops->setProcessador($_POST['processador']);
-        $desktops->setMemoria($_POST['memoria']);
-        $desktops->setHd($_POST['hd']);
-        $desktops->setTela($_POST['tela']);
-        $desktops->setPreco($_POST['preco']);
+        $tablet->setMarca($_POST['marca']);
+        $tablet->setModelo($_POST['modelo']);
+        $tablet->setPreco($_POST['preco']);
 
-        if ($desktops->inserir()) {
+        if ($tablet->inserir()) {
             echo "DADO INSERIDO!!!";
         }
     endif;
@@ -64,26 +61,15 @@ function __autoload($class_name)
             <form method="post" action="" class="form-container">
                 <div class="inputFlex-container">
 
-                    <label>marca:</label>
-                    <input type="text" name="marca" class="ipn" />
 
-                    <label>modelo:</label>
+                    <label>Marmca:</label>
+                    <input type="text" name="marca" class="ipe" />
+
+                    <label>Modelo:</label>
                     <input type="text" name="modelo" class="ipe" />
 
-                    <label>processador:</label>
-                    <input type="text" name="processador" class="ipe" />
-
-                    <label>memoria:</label>
-                    <input type="text" name="memoria" class="ipe" />
-
-                    <label>hd:</label>
-                    <input type="text" name="hd" class="ipe" />
-
-                    <label>tela:</label>
-                    <input type="text" name="tela" class="ipe" />
-
-                    <label>preco:</label>
-                    <input type="number" name="preco" class="ipe" />
+                    <label>Preco:</label>
+                    <input type="text" name="preco" class="ipe" />
 
                     <input type="submit" name="cadastrar" value="Cadastrar Dados" class="ips" id="button-input" />
                 </div>

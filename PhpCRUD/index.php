@@ -45,34 +45,35 @@ function __autoload($class_name)
   <section>
     <nav>
       <ul>
-        <li><a href="#"><button>Notebooks</button></a></li>
-        <li><a href="http://localhost:1010/desktop.php"><button>Desktops</button></a></li>
-        <li><a href="#"><button>Tablets</button></a></li>
-        <li><a href="#"><button>Celulares</button></a></li>
-        <li><a href="#"><button>Servidores</button></a></li>
-        <li><a href="#"><button>Softwares</button></a></li>
+        <li><a href="/index.php"><button>Clientes</button></a></li>
+        <li><a href="/notebook.php"><button>Notebooks</button></a></li>
+        <li><a href="/desktop.php"><button>Desktops</button></a></li>
+        <li><a href="/tablets.php"><button>Tablets</button></a></li>
+        <li><a href="/celulares.php"><button>Celulares</button></a></li>
+        <li><a href="/servidores.php"><button>Servidores</button></a></li>
+        <li><a href="/sofwares.php"><button>Softwares</button></a></li>
       </ul>
     </nav>
 
     <article class="article-container">
 
       <form method="post" action="" class="form-container">
-        <fieldset class="inputFlex-container">
-          
+        <div class="inputFlex-container">
+
           <label>Nome:</label>
           <input type="text" name="nome" class="ipn" />
-       
+
           <label>E-mail:</label>
-          <input type="text" name="email" class="ipe" />
-      
+          <input type="email" name="email" class="ipe" />
+
           <label>Cpf:</label>
-          <input type="text" name="cpf" class="ipe" />
-    
+          <input type="number" name="cpf" class="ipe" />
+
           <label>Telefone::</label>
-          <input type="text" name="telefone" class="ipe" />
-          
-          <input type="submit" name="cadastrar" value="Cadastrar Dados" class="ips" class="button-imput" id="button-input"/>
-        </fieldset>
+          <input type="tel" name="telefone" class="ipe" />
+
+          <input type="submit" name="cadastrar" value="Cadastrar Dados" class="ips" class="button-imput" id="button-input" />
+        </div>
       </form>
     </article>
   </section>

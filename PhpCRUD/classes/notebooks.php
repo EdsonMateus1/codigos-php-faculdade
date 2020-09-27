@@ -3,7 +3,7 @@
 
 require_once 'banco.php';
 
-class Notebook
+class notebooks
 {
     private $marca;
     private $modelo;

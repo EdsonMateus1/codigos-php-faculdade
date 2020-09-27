@@ -143,6 +143,9 @@ background-color: #F5F5F5; /* Green */
 
 /* Style the footer */
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #777;
   padding: 35px;
   text-align: center;

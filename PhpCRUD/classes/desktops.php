@@ -2,7 +2,7 @@
 
 require_once 'banco.php';
 
-class desktop
+class desktops
 {
     private $marca;
     private $modelo;
