@@ -33,13 +33,13 @@ function __autoload($class_name)
     $usuario->setCpf($_POST['cpf']);
     $usuario->setTelefone($_POST['telefone']);
     if ($usuario->inserir()) {
-      echo "DADO INSERIDO!!!";
+      echo  "<script>alert('Cadastro realizado com sucesso!);</script>";
     }
   endif;
   ?>
 
 
-  <header>
+  <header> 
     <h2>TI - HOUSE</h2>
   </header>
   <section>
